@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/baseres_toolbar"
+        layout="@layout/baseres_toolbar"/>
+
+    <FrameLayout
+        android:id="@+id/baseres_content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/baseres_toolbar"/>
+
+    <TextView
+        android:id="@+id/titlebar_text_exittip"
+        style="@style/baseres_titlebar_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/baseres_toolbar"
+        android:layout_alignTop="@+id/baseres_toolbar"
+        android:layout_marginTop="@dimen/baseres_toolbar_padding_top"
+        android:background="@color/baseres_colorPrimary"
+        android:padding="3dp"
+        android:text="@string/baseres_double_click_exit"
+        android:visibility="gone"/>
+
+</RelativeLayout>

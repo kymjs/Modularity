@@ -1,0 +1,5 @@
+<resources>
+    <string name="explorer_app_name">explorer</string>
+
+    <string name="explorer_action_settings">Settings</string>
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="baseres_AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/baseres_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/baseres_colorPrimaryDark</item>
+        <item name="colorAccent">@color/baseres_colorAccent</item>
+    </style>
+
+    <style name="baseres_titlebar">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="baseres_titlebar_text" parent="baseres_titlebar">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

@@ -1,0 +1,21 @@
+package debug;
+
+import android.app.Application;
+
+import com.kymjs.app.memory.BuildConfig;
+import com.kymjs.common.App;
+import com.kymjs.common.LogUtils;
+import com.kymjs.crash.CustomActivityOnCrash;
+
+
+/**
+ * Created by ZhangTao on 10/12/16.
+ */
+public class AppContext extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        LogUtils.mLogEnable = BuildConfig.DEBUG;
+        CustomActivityOnCrash.install(App.INSTANCE);
+    }
+}

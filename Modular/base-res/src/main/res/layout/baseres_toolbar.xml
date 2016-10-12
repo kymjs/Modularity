@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:id="@+id/baseres_toolbar"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="@dimen/baseres_titlebar_height"
+                                   android:background="@color/baseres_colorPrimary"
+                                   app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                                   app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>

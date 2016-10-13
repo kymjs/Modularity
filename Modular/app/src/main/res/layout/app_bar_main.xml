@@ -22,6 +22,17 @@
 
     </android.support.design.widget.AppBarLayout>
 
+    <TextView
+        android:id="@+id/titlebar_text_exittip"
+        style="@style/baseres_titlebar_text"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="@dimen/baseres_toolbar_padding_top"
+        android:background="@color/baseres_colorPrimary"
+        android:padding="3dp"
+        android:text="@string/baseres_double_click_exit"
+        android:visibility="gone"/>
+
     <include layout="@layout/content_main"/>
 
 </android.support.design.widget.CoordinatorLayout>

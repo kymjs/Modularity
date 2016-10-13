@@ -20,4 +20,6 @@ public class MainFragment extends Fragment {
         super.onCreateView(inflater, container, savedInstanceState);
         return View.inflate(getActivity(), R.layout.memory_fragment_main, null);
     }
+    
+
 }

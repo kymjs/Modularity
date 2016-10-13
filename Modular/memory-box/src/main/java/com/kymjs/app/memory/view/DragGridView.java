@@ -147,7 +147,7 @@ public class DragGridView extends GridView {
         @Override
         public void handleMessage(android.os.Message msg) {
             DragGridView outsideView = outside.get();
-            if (outsideView != null) {
+            if (outsideView != null && outsideView.moveListener != null) {
                 switch (msg.what) {
                     case HANDLE_START:
                         outsideView.moveListener.startMove();

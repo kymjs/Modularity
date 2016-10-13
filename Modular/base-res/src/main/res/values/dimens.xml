@@ -4,6 +4,5 @@
 
     <dimen name="baseres_pager_title_height">37dp</dimen>
 
-    <dimen name="baseres_titlebar_height">55dp</dimen>
     <dimen name="baseres_bottombar_height">55dp</dimen>
 </resources>

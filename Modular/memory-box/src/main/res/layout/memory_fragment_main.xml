@@ -5,12 +5,9 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
-
-    <TextView
+    <com.kymjs.app.memory.view.DragGridView
+        android:id="@+id/drag_gridview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="hello kymjs!"
-        android:textSize="20sp"/>
+        android:layout_height="match_parent"/>
 
 </RelativeLayout>

@@ -14,7 +14,7 @@ public class FragmentRouter {
             Class fragmentClass = Class.forName(name);
             fragment = (Fragment) fragmentClass.newInstance();
         } catch (Exception e) {
-            throw new RuntimeException("class is not fragment");
+            throw new RuntimeException(e);
         }
         return fragment;
     }

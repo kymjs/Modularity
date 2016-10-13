@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:label="@string/explorer_app_name"
         android:supportsRtl="true"
-        android:theme="@style/explorer_AppTheme"> 
+        android:theme="@style/baseres_AppTheme">
 
         <activity
             android:name=".MainActivity"

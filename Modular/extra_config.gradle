@@ -56,4 +56,3 @@ task createSharedDependency(dependsOn: 'assembleDebug', type: Jar) {
 afterEvaluate {
     tasks.findByName('assembleDebug').finalizedBy(createSharedDependency)
 }
-

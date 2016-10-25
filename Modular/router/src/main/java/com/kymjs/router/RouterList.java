@@ -5,7 +5,9 @@ package com.kymjs.router;
  */
 
 public class RouterList {
-    public static final String ACTIVITY_MEMORYBOX_MAIN = "com.kymjs.app.memory.module.main.MainActivity";
-    
-    public static final String FRAGMENT_MEMORYBOX_MAIN = "com.kymjs.app.memory.module.list.MainFragment";
+    public static final String MEMORY_ATY_MAIN = "com.kymjs.app.memory.module.main.MainActivity";
+
+    public static final String EXPLORER_ATY_MAIN = "com.kymjs.app.explorer.MainActivity";
+
+    public static final String MEMORY_FRAG_MAIN = "com.kymjs.app.memory.module.list.MainFragment";
 }

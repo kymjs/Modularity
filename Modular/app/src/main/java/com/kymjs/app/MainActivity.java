@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity
         getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.content_main,
-                        FragmentRouter.getFragment(RouterList.FRAGMENT_MEMORYBOX_MAIN))
+                        FragmentRouter.getFragment(RouterList.MEMORY_FRAG_MAIN))
                 .commit();
     }
 
@@ -81,9 +81,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
-
+            ActivityRouter.startActivity(this, RouterList.EXPLORER_ATY_MAIN);
         } else if (id == R.id.nav_share) {
-            ActivityRouter.startActivity(this, RouterList.ACTIVITY_MEMORYBOX_MAIN);
+            ActivityRouter.startActivity(this, RouterList.MEMORY_ATY_MAIN);
         } else if (id == R.id.nav_send) {
             throw new RuntimeException("throw exception");
         }
@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity
      * 显示Toolbar的退出tip
      */
     public void showExitTip() {
-        TextView view = (TextView) findViewById(com.kymjs.app.memory.R.id.titlebar_text_exittip);
+        TextView view = (TextView) findViewById(R.id.titlebar_text_exittip);
         view.setVisibility(View.VISIBLE);
         Animation a = AnimationUtil.getTranslateAnimation(0f, 0f, -getToolbar().getHeight(), 0f, 300);
         view.startAnimation(a);
@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity
      * 取消退出
      */
     public void cancleExit() {
-        final TextView view = (TextView) findViewById(com.kymjs.app.memory.R.id.titlebar_text_exittip);
+        final TextView view = (TextView) findViewById(R.id.titlebar_text_exittip);
         Animation a = AnimationUtil.getTranslateAnimation(0f, 0f, 0f, -getToolbar().getHeight(), 300);
         a.setAnimationListener(new Animation.AnimationListener() {
             @Override

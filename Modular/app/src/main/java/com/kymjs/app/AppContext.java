@@ -14,7 +14,7 @@ public class AppContext extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        LogUtils.mLogEnable = com.kymjs.app.memory.BuildConfig.DEBUG;
+        LogUtils.mLogEnable = BuildConfig.DEBUG;
         CustomActivityOnCrash.install(App.INSTANCE);
     }
 }

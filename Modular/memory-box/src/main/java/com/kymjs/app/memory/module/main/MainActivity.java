@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.baseres_content_main,
-                        FragmentRouter.getFragment(RouterList.FRAGMENT_MEMORYBOX_MAIN))
+                        FragmentRouter.getFragment(RouterList.MEMORY_FRAG_MAIN))
                 .commit();
     }
 

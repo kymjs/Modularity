@@ -16,7 +16,6 @@ import com.kymjs.app.base_res.utils.AnimationUtil;
 /**
  * Created by ZhangTao on 10/11/16.
  */
-
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

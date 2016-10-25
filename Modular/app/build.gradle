@@ -32,9 +32,12 @@ dependencies {
     })
     testCompile 'junit:junit:4.12'
     if (!isDebug.toBoolean()) {
+        compile project(':explorer')
         compile project(':memory-box')
     } else {
         compile project(':router')
     }
 }
 
+sourceCompatibility = JavaVersion.VERSION_1_7
+targetCompatibility = JavaVersion.VERSION_1_7
